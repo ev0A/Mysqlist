@@ -1,0 +1,2 @@
+C:/windows/win.ini
+C:/windows/system.ini
