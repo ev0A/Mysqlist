@@ -28,7 +28,7 @@ def mysql_get_file_content(sv,filename):
     content=conn.recv(9999)
     conn.close()
     if len(content) >  4:
-        with open(logpath + "/" + line.replace("/", "_").replace(":", "_"), "w") as txt:
+        with open(logpath + "/" + filename.replace("/", "_").replace(":", "_"), "w") as txt:
             txt.write(content)
         return True
     else:
